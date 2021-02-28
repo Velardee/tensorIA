@@ -1,15 +1,15 @@
 <div class="container" *ngIf="isHomeRoute()">
   <div class="row justify-content-center">
     <div class="col-sm">
-      <h3>Draw a number between 0 to 9</h3>
+      <h3>Dibuja un numero entre 0 y 9</h3>
       <div class="wrapper">
         <canvas drawable (newImage)="predict($event)"></canvas><br>
       </div>
-      <button class="btn btn-sm btn-warning" (click)="canvas.clear();clear();">Erase</button>
+      <button class="btn btn-sm" (click)="canvas.clear();clear();">Borrar</button>
     </div>
   </div>
-  <div>
-    <h1>Predicted Number: {{predictedNumber}}</h1>
+  <div class="result">
+    <h2>Prediccion de numero: {{predictedNumber}}</h2>
   </div>
 </div>
 

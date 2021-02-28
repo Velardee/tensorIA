@@ -1,10 +1,10 @@
 .wrapper {
     display: inline-flex;
     justify-content: flex-end;
-    border: 10px solid lighten(#ef6c00, 15%);
+    border: 10px solid lighten(#993dff, 15%);
     transition: border-color .2s ease-in;
     &:hover {
-        border: 10px solid #ef6c00;
+        border: 10px solid #993dff;
         transition: border-color .2s ease-in;
     }
 }
@@ -15,4 +15,20 @@ canvas {
 
 .row {
     margin: 5vh 0vw;
+}
+
+.btn .btn-sm {
+    background: #993dff;
+}
+
+.col-sm{
+    text-align: center;
+}
+
+.result{
+    text-align: center;
+}
+
+.result h2 {
+    margin-left: -3%;
 }
